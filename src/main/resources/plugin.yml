@@ -1,19 +1,19 @@
-name: SKShop
+name: ShopPluginMc
 version: 1.2.0
 main: com.flovex.shop.ShopPluginMc
 api-version: '1.21'
-author: SKShop
+author: ShopPluginMc
 commands:
   shop:
     description: Opens shop
     usage: /shop [category]
-    permission: skshop.use
-  flovexshop:
+    permission: mcshop.use
+  mcshop:
     description: Admin command
-    usage: /flovexshop reload
-    permission: flovexshop.admin
+    usage: /mcshop reload
+    permission: mcshop.admin
 permissions:
-  flovexshop.use:
+  mcshop.use:
     default: true
-  flovexshop.admin:
+  mcshop.admin:
     default: op
