@@ -1,0 +1,60 @@
+# ShopPluginMc settings
+shard-category: shards
+shard-command: shardshop
+categories:
+  blocks:
+    enabled: true
+    slot: 10
+    icon: BRICKS
+    name: "&a&lBlocks"
+    title: "&8Blocks"
+    size: 54
+    items: {}
+  food:
+    enabled: true
+    slot: 11
+    icon: COOKED_BEEF
+    name: "&e&lFood"
+    title: "&8Food"
+    size: 54
+    items: {}
+  storage:
+    enabled: true
+    slot: 12
+    icon: CHEST
+    name: "&6&lStorage"
+    title: "&8Storage"
+    size: 54
+    items: {}
+  gear:
+    enabled: true
+    slot: 13
+    icon: DIAMOND_SWORD
+    name: "&b&lGear"
+    title: "&8Gear"
+    size: 54
+    items: {}
+  potions:
+    enabled: true
+    slot: 14
+    icon: POTION
+    name: "&d&lPotions"
+    title: "&8Potions"
+    size: 54
+    items: {}
+  enchantments:
+    enabled: true
+    slot: 15
+    icon: ENCHANTED_BOOK
+    name: "&5&lEnchantments"
+    title: "&8Enchantments"
+    size: 54
+    items: {}
+  shards:
+    enabled: true
+    slot: 16
+    icon: AMETHYST_SHARD
+    name: "&d&lShards"
+    title: "&8Shards"
+    size: 54
+    items: {}
