@@ -5,7 +5,7 @@ SKShop 1.0.20 recreation (in progress), customized to use Shards.
 - Target: Paper 1.21.11+ / Java 21
 - `/shop` category menu and `/shop <category>`
 - Configured Shards category executes `/shardshop`
-- `/flovexshop reload` admin command
+- `/skshop reload` admin command
 - Build validation via GitHub Actions
 
 ## Status
