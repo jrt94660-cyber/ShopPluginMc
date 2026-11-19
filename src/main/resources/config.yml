@@ -1,60 +1,97 @@
-# ShopPluginMc early menu scaffold
+menu:
+  title: '&8Shop'
+buy-menu:
+  title: '&8Purchase'
 shard-category: shards
 shard-command: shardshop
+currency-name: '$'
+# Optional payment command (console). Replace %player%, %price% (total), and %amount%.
+# Leave blank to disable payment. IMPORTANT: item rewards are granted directly if no item command is configured.
+payment-command: ''
+messages:
+  purchased: '&aPurchased &f%amount%x %item% &afor &e%price%&a.'
 categories:
   blocks:
     enabled: true
     slot: 10
     icon: BRICKS
-    name: "&a&lBlocks"
-    title: "&8Blocks"
-    size: 54
-    items: {}
+    name: '&a&lBlocks'
+    title: '&8Blocks'
+    items:
+      stone: {material: STONE, price: 2}
+      cobblestone: {material: COBBLESTONE, price: 1}
+      dirt: {material: DIRT, price: 1}
+      sand: {material: SAND, price: 2}
+      glass: {material: GLASS, price: 4}
+      oak_planks: {material: OAK_PLANKS, price: 3}
+      spruce_planks: {material: SPRUCE_PLANKS, price: 3}
+      bricks: {material: BRICKS, price: 8}
+      obsidian: {material: OBSIDIAN, price: 50}
+      quartz: {material: QUARTZ_BLOCK, price: 20}
   food:
     enabled: true
     slot: 11
     icon: COOKED_BEEF
-    name: "&e&lFood"
-    title: "&8Food"
-    size: 54
-    items: {}
+    name: '&e&lFood'
+    title: '&8Food'
+    items:
+      steak: {material: COOKED_BEEF, price: 5}
+      golden_carrot: {material: GOLDEN_CARROT, price: 12}
+      apple: {material: APPLE, price: 3}
+      bread: {material: BREAD, price: 3}
+      cooked_chicken: {material: COOKED_CHICKEN, price: 4}
+      cooked_pork: {material: COOKED_PORKCHOP, price: 5}
+      golden_apple: {material: GOLDEN_APPLE, price: 100}
   storage:
     enabled: true
     slot: 12
     icon: CHEST
-    name: "&6&lStorage"
-    title: "&8Storage"
-    size: 54
-    items: {}
+    name: '&6&lStorage'
+    title: '&8Storage'
+    items:
+      chest: {material: CHEST, price: 10}
+      hopper: {material: HOPPER, price: 50}
+      barrel: {material: BARREL, price: 12}
+      shulker_box: {material: SHULKER_BOX, price: 500}
+      ender_chest: {material: ENDER_CHEST, price: 250}
+      furnace: {material: FURNACE, price: 15}
   gear:
     enabled: true
     slot: 13
     icon: DIAMOND_SWORD
-    name: "&b&lGear"
-    title: "&8Gear"
-    size: 54
-    items: {}
+    name: '&b&lGear'
+    title: '&8Gear'
+    items:
+      iron_sword: {material: IRON_SWORD, price: 100}
+      diamond_sword: {material: DIAMOND_SWORD, price: 1000}
+      iron_pickaxe: {material: IRON_PICKAXE, price: 125}
+      diamond_pickaxe: {material: DIAMOND_PICKAXE, price: 1500}
+      iron_chestplate: {material: IRON_CHESTPLATE, price: 250}
+      diamond_chestplate: {material: DIAMOND_CHESTPLATE, price: 2000}
+      bow: {material: BOW, price: 150}
+      arrow: {material: ARROW, price: 2}
   potions:
     enabled: true
     slot: 14
     icon: POTION
-    name: "&d&lPotions"
-    title: "&8Potions"
-    size: 54
-    items: {}
+    name: '&d&lPotions'
+    title: '&8Potions'
+    items:
+      potion: {material: POTION, price: 100}
+      splash_potion: {material: SPLASH_POTION, price: 150}
+      lingering_potion: {material: LINGERING_POTION, price: 250}
   enchantments:
     enabled: true
     slot: 15
     icon: ENCHANTED_BOOK
-    name: "&5&lEnchantments"
-    title: "&8Enchantments"
-    size: 54
-    items: {}
+    name: '&5&lEnchantments'
+    title: '&8Enchantments'
+    items:
+      enchanted_book: {material: ENCHANTED_BOOK, price: 250, command: 'give %player% enchanted_book 1'}
   shards:
     enabled: true
     slot: 16
     icon: AMETHYST_SHARD
-    name: "&d&lShards"
-    title: "&8Shards"
-    size: 54
+    name: '&d&lShards'
+    title: '&8Shards'
     items: {}
