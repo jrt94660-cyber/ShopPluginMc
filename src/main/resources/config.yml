@@ -4,12 +4,11 @@ buy-menu:
   title: '&8Purchase'
 shard-category: shards
 shard-command: shardshop
-currency-name: '$'
-# Optional payment command (console). Replace %player%, %price% (total), and %amount%.
-# Leave blank to disable payment. IMPORTANT: item rewards are granted directly if no item command is configured.
-payment-command: ''
+currency-name: 'Shards'
+# Console payment command; substitute %player% and %price% (total amount).
+payment-command: 'shards take %player% %price%'
 messages:
-  purchased: '&aPurchased &f%amount%x %item% &afor &e%price%&a.'
+  purchased: '&aPurchased &f%amount%x %item% &afor &e%price% Shards&a.'
 categories:
   blocks:
     enabled: true
